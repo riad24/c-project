@@ -8,7 +8,6 @@ using namespace std;
     {
         int data;
         link *next;
-
     };
 
     link *head = NULL;
@@ -55,7 +54,7 @@ using namespace std;
 
     }
     printList();
-    cout<<'\n'<<"Delete Position"<<'\n';
+    cout<<'\n'<<"Delete Position Number"<<'\n';
     cin>>d;
     deleted(d);
     printList();
