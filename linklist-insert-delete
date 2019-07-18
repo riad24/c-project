@@ -12,14 +12,16 @@ using namespace std;
 
     link *head = NULL;
     link *present = NULL;
-
+    
+//create function ==============================================>
     void create (int data){
         link *lnk = (struct link*)malloc(sizeof(struct link));
         lnk->data = data;
         lnk->next = head;
         head = lnk;
     }
-
+    
+//delete postion function==================================>
     void deleted (int data){
         struct link *crnt = new link;
         struct link *prv = new link;
@@ -54,6 +56,7 @@ using namespace std;
 
     }
     printList();
+    //Delete Position==================================>
     cout<<'\n'<<"Delete Position Number"<<'\n';
     cin>>d;
     deleted(d);
